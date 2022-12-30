@@ -1,25 +1,16 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * main - Programe entry point
+ * print_alphabet - funtion to print abc
  *
- * Description: This is a program to print putchar
- *
- * Return: Always 0 (Success)
+ * Return: 0
  */
-int main(void)
-
+void print_alphabet(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	char c;
 
-	return (0);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
